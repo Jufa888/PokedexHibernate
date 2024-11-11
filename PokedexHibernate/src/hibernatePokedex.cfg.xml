@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM "classpath://org/hibernate/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/pokedex</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">1234</property>
+        <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <property name="hibernate.show_sql">true</property>
+         <property name="format_sql">true</property>
+        <property name="hbm2ddl.auto">update</property>
+        <mapping class="pokedexhibernate.Entrenador"/>
+        <mapping class="pokedexhibernate.Generacion"/>
+        <mapping class="pokedexhibernate.Gimnasio"/>
+        <mapping class="pokedexhibernate.Lider"/>
+        <mapping class="pokedexhibernate.Movimiento"/>
+        <mapping class="pokedexhibernate.Objeto"/>
+        <mapping class="pokedexhibernate.Pokemon"/>
+        <mapping class="pokedexhibernate.Profesor"/>
+        
+    </session-factory>
+</hibernate-configuration>
+
+
